@@ -4,7 +4,10 @@ const toDoList = document.getElementById("todo-list");
 let toDos =[];
 
 const TODOS_KEY="todos";
-
+/*
+    1. a 태그를 눌렀을때도 href 링크로 이동하지 않게 할 경우
+    2. form 안에 submit 역할을 하는 버튼을 눌렀어도 새로 실행하지 않게 하고싶을 경우 (submit은 작동됨)
+*/
 function saveToDos(){
     localStorage.setItem("todos",JSON.stringify(toDos));
 }
